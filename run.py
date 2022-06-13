@@ -9,6 +9,9 @@ from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.search.ConstraintBased.CDNOD import cdnod
 from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
 
+import AdjacencyConfusion as AdjConf
+import ArrowConfusion as ArrConf
+
 def run():
 
     data = sampler.sample(const.p, const.d, const.N)
