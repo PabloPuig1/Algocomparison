@@ -1,16 +1,19 @@
+# files withing the project
 import constants as const
 import RandomSample as sampler
+import AdjacencyConfusion as AdjConf
+import ArrowConfusion as ArrConf
 
+# useful python libraries
 import numpy as np
 import pandas as pd
 
+# causal-learn package
 from causallearn.search.ConstraintBased.PC import pc
 from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.search.ConstraintBased.CDNOD import cdnod
 from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
 
-import AdjacencyConfusion as AdjConf
-import ArrowConfusion as ArrConf
 
 def run():
 
